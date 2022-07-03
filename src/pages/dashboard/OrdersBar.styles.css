@@ -1,0 +1,100 @@
+.recentOrders {
+    position: relative;
+    background: var(--white);
+    min-height: 250px;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2 {
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.btn {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.recentOrders table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.recentOrders table tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.recentOrders table td {
+    padding: 10px;
+}
+
+.recentOrders table td:last-child {
+    text-align: right;
+}
+
+.recentOrders table td:nth-child(2) {
+    text-align: left;
+}
+
+.recentOrders table td:nth-child(3) {
+    text-align: center;
+}
+
+.status_delivered {
+    padding: 2px 4px;
+    background: greenyellow;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/*----------------------------------------------------------*/
+
+/*.recentOrders table tr {*/
+/*    color: var(--black1);*/
+/*    border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*.recentOrders table tr:hover {*/
+/*    background: var(--blue);*/
+/*    color: var(--white);*/
+
+/*}*/
+
+/*.recentOrders table td {*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.recentOrders table td:last-child {*/
+/*    text-align: right;*/
+/*}*/
+
+/*.recentOrders table td:nth-child(2) {*/
+/*    text-align: left;*/
+/*}*/
+
+/*.recentOrders table td:nth-child(3) {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.status_delivered {*/
+/*    padding: 2px 4px;*/
+/*    background: greenyellow;*/
+/*    color: var(--white);*/
+/*    border-radius: 4px;*/
+/*    font-size: 14px;*/
+/*    font-weight: 500;*/
+/*}*/

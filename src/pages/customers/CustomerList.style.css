@@ -1,0 +1,58 @@
+.customerList {
+    padding: 20px;
+}
+
+.UserListUser {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.userAddButton {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(0, 128, 13);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.UserListImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.UserListEdit {
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.UserListDelete {
+    border: none;
+    border-radius: 10px;
+    padding: 1px 2px;
+    background-color: rgb(229, 0, 0);
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.UserListDelete span {
+    padding-top: 3px;
+}
