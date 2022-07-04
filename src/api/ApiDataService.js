@@ -33,7 +33,7 @@ const login = (username, password) => {
     const params = new URLSearchParams();   
     params.append('username', username);
     params.append('password', password);
-    console.log(params);
+    console.log(params + username + '-' + password);
     return axios.post(url, params, conf)
 };
 
