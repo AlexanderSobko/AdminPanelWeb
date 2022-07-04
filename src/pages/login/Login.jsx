@@ -10,6 +10,7 @@ export default function Login() {
 
     const handleSubmit = async e => {
         e.preventDefault();
+        console.log(password + '-' + username);
         ApiDataService.login(username, password)
             .then(resp => {
                 token.saveToken(resp.data.access_token)
