@@ -56,7 +56,7 @@ export default function Customers() {
                 console.log(err);
                 ApiDataService.handleError(err);
             })
-    }, []);
+    }, [customers]);
 
     const rows: GridRowsProp = customers;
 
@@ -68,7 +68,7 @@ export default function Customers() {
                     <button className="userAddButton">Add</button>
                 </Link>
             </div>
-            <div style={{height: 300, width: '100%'}}>
+            <div style={{height: 640, width: '100%'}}>
                 <DataGrid rows={rows} columns={columns} checkboxSelection disableSelectionOnClick/>
             </div>
         </div>

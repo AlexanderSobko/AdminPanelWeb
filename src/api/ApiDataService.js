@@ -26,9 +26,7 @@ const useToken = () => {
 const login = (username, password) => {
     const conf = {
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS'
+            'Content-Type': 'application/x-www-form-urlencoded'
         }
     };
     const url = `${baseUrl}/login`;
@@ -57,8 +55,8 @@ const deleteCustomer = id => {
     return baseReq.delete(`/customer/${id}`);
 };
 
-const addCustomer = props => {
-    return baseReq.post(`/customer`, props.data);
+const addCustomer = data => {
+    return baseReq.post(`/customer`, data);
 };
 
 const editCustomer = (data) => {

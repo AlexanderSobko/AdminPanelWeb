@@ -24,7 +24,7 @@ export default function AddCustomer() {
             phoneNumber: phoneNumber,
             deliveryMethod: deliveryMethod,
             deliveryAddress: deliveryAddress,
-            photo: photo ? photo.slice(22) : null
+            photo: photo ? photo.slice(23) : null
         });
         console.log(data);
         ApiDataService.addCustomer(data)

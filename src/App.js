@@ -1,6 +1,5 @@
 import './App.css';
 import React, {useState} from "react";
-import NavBar from './components/UI/navbar/NavBar';
 import {Routes, Route} from "react-router-dom";
 import Dashboard from './pages/dashboard/dashboard';
 import OrderList from './pages/orders/OrderList';
@@ -17,6 +16,7 @@ import AddPost from './pages/posts/AddPost';
 import Statistics from './pages/statistics/Statistics';
 import Login from './pages/login/Login';
 import ApiDataService from './api/ApiDataService';
+import NavBar from './components/navbar/NavBar';
 
 function App() {
 

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import loginImg from './login.png';
 import './Login.css';
 import ApiDataService from '../../api/ApiDataService';
 
@@ -14,6 +13,7 @@ export default function Login() {
         ApiDataService.login(username, password)
             .then(resp => {
                 token.saveToken(resp.data.access_token)
+                console.log(resp);
                 window.location.reload();
             })
             .catch(exc => console.log(exc));
@@ -27,7 +27,7 @@ export default function Login() {
             <div className={"lContainer" + (false ? ' hidden' : ' ')}>
                 <div className="lItem">
                     <div className="loginImage">
-                        <img src={loginImg} width="300" style={{position: 'relative'}} alt="login"/>
+                        <img src='/login.png' width="300" style={{position: 'relative'}} alt="login"/>
                     </div>
                     <div className="loginForm">
                         <h2>Admin Panel</h2>

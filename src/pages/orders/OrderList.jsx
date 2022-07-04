@@ -14,7 +14,7 @@ export default function OrderList() {
                 setOrders(response.data);
                 console.log(response)
             });
-    }, []);
+    }, [orders]);
 
     const deleteOrder = (id) => {
         ApiDataService.deleteOrder(id)
@@ -64,7 +64,7 @@ export default function OrderList() {
                     <button className="orderAddButton">Add</button>
                 </Link>
             </div>
-            <div style={{height: 600, width: '100%'}}>
+            <div className="orderTable">
                 <DataGrid rows={rows} columns={columns} checkboxSelection disableSelectionOnClick/>
             </div>
         </div>

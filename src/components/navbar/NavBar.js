@@ -1,6 +1,6 @@
 import NavBarItem from "./NavBarItem";
 import './NavBar.styles.css'
-import ApiDataService from "../../../api/ApiDataService";
+import ApiDataService from "../../api/ApiDataService";
 
 
 export default function NavBar(props) {
