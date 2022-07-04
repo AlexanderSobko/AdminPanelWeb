@@ -1,7 +1,7 @@
 import axios from "axios";
 import {useState} from "react";
 
-const baseUrl = "http://localhost:3001/api"
+const baseUrl = "http://217.74.242.13:3001/api"
 
 const baseReq = axios.create({
     baseURL: baseUrl,
